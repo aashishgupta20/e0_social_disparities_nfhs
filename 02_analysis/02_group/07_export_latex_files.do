@@ -1,6 +1,5 @@
 ******************************************************
 *File to get estimates into latex  
-*Last modified: July 4 2020, AG
 ******************************************************
 
 **************************************************
@@ -9,17 +8,6 @@
 	set more off
 	
 	*Set user
-	local user  "aashish_personal" // "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
-		if "`user'"=="aashish_personal" {
-			global dir "C:\Users\aashi\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
 
 	
 	*Log

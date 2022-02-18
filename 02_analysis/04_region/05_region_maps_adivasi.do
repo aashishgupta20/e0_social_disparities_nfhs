@@ -1,7 +1,6 @@
 **************************************************
 *Project: Caste and mortality							 *
 *Purpose: Make maps by region					 		 *
-*Last modified: 29 July 2020 by AG					 *
 **************************************************
 
 **************************************************
@@ -13,16 +12,6 @@
 	set maxvar  32767, perm 
 	
 	
-	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
-
 	
 	*Log
 	cap log close

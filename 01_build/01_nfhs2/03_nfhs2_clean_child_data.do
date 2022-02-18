@@ -1,7 +1,6 @@
 **************************************************
 *Project: Caste and mortality
 *Purpose: Use birth history data to estimate child mortality
-*Last modified: Feb 19 2021 by AG
 **************************************************
 
 **************************************************
@@ -12,14 +11,7 @@
 	set more off
 	
 	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
+
 
 	*Log
 	cap log close

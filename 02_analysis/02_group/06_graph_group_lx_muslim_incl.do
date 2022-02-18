@@ -1,7 +1,6 @@
 ******************************************************
 *File to create graph life expectancy disparities 
 *by group, for e0
-*Last modified: Feb 23 2021, AG
 ******************************************************
 
 **************************************************
@@ -10,14 +9,6 @@
 	set more off
 	
 	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
 
 	*Log
 	cap log close

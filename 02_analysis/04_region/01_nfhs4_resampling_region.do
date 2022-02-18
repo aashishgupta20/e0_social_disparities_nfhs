@@ -1,7 +1,6 @@
 **************************************************
 *Project: Caste and mortality							 *
 *Purpose: Resample for bootstraps - NFHS 4 		 *
-*Last modified: 3 July 2020 by AG					 *
 **************************************************
 
 **************************************************
@@ -12,16 +11,6 @@
 	set more off
 	set maxvar  32767, perm 
 	
-	
-	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
 
 	
 	*Log

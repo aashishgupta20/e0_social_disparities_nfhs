@@ -1,11 +1,10 @@
 **************************************************
-*Project: Caste and mortality							 *
-*Purpose: Bootstraps for overall estimates-NFHS2 *
-*Last modified: 20 Feb 2020 by AG					 *
+*Project: Social disparities in mortality			*
+*Purpose: Bootstraps for overall estimates-NFHS2 	*
 **************************************************
 
 **************************************************
-*Preamble													 *
+*Preamble											*
 **************************************************
 	
 	clear all
@@ -15,14 +14,6 @@
 	*Set directory
 	
 	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
 
 	
 	*Log

@@ -1,7 +1,6 @@
 **************************************************
 *Project: Caste and mortality							 *
 *Purpose: Bootstraps for group-rural estimates-NFHS2 *
-*Last modified: 23 Feb 2020 by AG					 *
 **************************************************
 
 **************************************************
@@ -15,16 +14,7 @@
 	*Set directory
 	
 	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
 
-	
 	*Log
 	cap log close
 	log using "$dir/02_logs/02analysis_nfhs2_resampling_group_residence.txt", text replace

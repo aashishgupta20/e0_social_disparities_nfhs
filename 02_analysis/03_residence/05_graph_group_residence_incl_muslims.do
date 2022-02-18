@@ -1,7 +1,6 @@
 ******************************************************
 *File to merge 100 samples from nfhs 4
 *And to create a graph with nmx from two sources
-*Last modified: July 4 2020, AG
 ******************************************************
 
 **************************************************
@@ -10,14 +9,6 @@
 	set more off
 	
 	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
 
 	*Log
 	cap log close
@@ -69,104 +60,7 @@
 	7 "Female, rural, 2013-2016" ///
 	8 "Female, urban, 2013-2016" 
 	lab val by_group by_group
-	
-	/*
-*make a graph 
 
-	graph twoway ///
-	(bar ex sgroup if sgroup==1, ///
-		barwidth(.65) fcolor(navy*.75) lcolor(navy)) ///
-	(bar ex sgroup if sgroup==2, ///
-		barwidth(.65) fcolor(sienna*.75) lcolor(sienna)) ///
-	(bar ex sgroup if sgroup==3, ///
-		barwidth(.65) fcolor(dkgreen*.75) lcolor(dkgreen)) ///
-	(bar ex sgroup if sgroup==4, ///
-		barwidth(.65) fcolor(red*.75) lcolor(red)) ///
-	(bar ex sgroup if sgroup==5, ///
-		barwidth(.65) fcolor(orange*.75) lcolor(orange)) ///
-	(rcap ex_uci ex_lci sgroup, ///
-		lcolor(black) lwidth(thin) msize(0)) ///
-	(scatter pos ex sgroup, ///
-		ms(none ..) mlab(ex) mlabcolor(white) mlabpos(0) mlabsize(*.7) mlabf(%2.1f)) ///
-	, ///
-	by(by_group, ///
-		graphregion(lcolor(white) fcolor(white)) ///
-		note("") ///
-		legend(off) ///
-		col(2) ///
-		note("Note: 95% CIs calculated using a cluster-bootstrap approach." ///
-	"The number of bootstrap samples drawn was 100. Some CIs may extend beyond y-axis limits.", size(*.6) pos(6))) ///
-	graphregion(lcolor(white) fcolor(white)) ///
-	subtitle(, fcolor(white) ///
-		lcolor(white) size(*.7)) ///
-	ylabel(50(5)75, nogrid labsize(*.6)) ///
-	ysc(r(49.5 75)) ///
-	xlabel(1 `" "Scheduled" "Caste" "' 2 `" "Scheduled" "Tribe" "' 3 "Muslim" 4 `" "Other" "Backward Class" "' ///
-	5 "High Caste", labsize(*.55)) ///
-	xtitle("") ///
-	ytitle("life expectancy at birth (e{sub:0}), years", size(*.8)) ///
-	xsize(2.2) ysize(3)
-	
-	graph save ///
-	"$dir\05_out\figures\ex_caste_residence.gph", ///
-	replace
-	
-	graph export ///
-	"$dir\05_out\figures\ex_caste_residence.tif", ///
-	width(3000) replace
-	
-	graph export ///
-	"$dir\05_out\figures\ex_caste_residence.pdf", ///
-	replace
-	
-
-*make a graph for presentation 
-	graph twoway ///
-	(bar ex sgroup if sgroup==1, ///
-		barwidth(.65) fcolor(navy*.75) lcolor(navy)) ///
-	(bar ex sgroup if sgroup==2, ///
-		barwidth(.65) fcolor(sienna*.75) lcolor(sienna)) ///
-	(bar ex sgroup if sgroup==3, ///
-		barwidth(.65) fcolor(dkgreen*.75) lcolor(dkgreen)) ///
-	(bar ex sgroup if sgroup==4, ///
-		barwidth(.65) fcolor(red*.75) lcolor(red)) ///
-	(bar ex sgroup if sgroup==5, ///
-		barwidth(.65) fcolor(orange*.75) lcolor(orange)) ///
-	(rcap ex_uci ex_lci sgroup, ///
-		lcolor(black) lwidth(thin) msize(0)) ///
-	(scatter pos ex sgroup, ///
-		ms(none ..) mlab(ex) mlabcolor(white) mlabpos(0) mlabsize(*.7) mlabf(%2.1f)) ///
-	, ///
-	by(by_group, ///
-		graphregion(lcolor(white) fcolor(white)) ///
-		note("") ///
-		legend(off) ///
-		col(4) ///
-		note("Note: 95% CIs calculated using a cluster-bootstrap approach." ///
-	"The number of bootstrap samples drawn was 100. Some CIs may extend beyond y-axis limits.", size(*.6) pos(6))) ///
-	graphregion(lcolor(white) fcolor(white)) ///
-	subtitle(, fcolor(white) ///
-		lcolor(white) size(*.7)) ///
-	ylabel(50(5)75, nogrid labsize(*.6)) ///
-	ysc(r(49.5 75)) ///
-	xlabel(1 `" "Scheduled" "Caste" "' 2 `" "Scheduled" "Tribe" "' 3 "Muslim" 4 `" "Other" "Backward Class" "' ///
-	5 "High Caste", labsize(*.55)) ///
-	xtitle("") ///
-	ytitle("life expectancy at birth (e{sub:0}), years", size(*.8)) ///
-	xsize(2) ysize(1)
-	
-	graph save ///
-	"$dir\05_out\figures\ex_caste_residence_present.gph", ///
-	replace
-	
-	graph export ///
-	"$dir\05_out\figures\ex_caste_residence_present.tif", ///
-	width(3000) replace
-	
-	graph export ///
-	"$dir\05_out\figures\ex_caste_residence_present.pdf", ///
-	replace
-	*/
 	
 *over rural residence 
 	drop rural age_group 

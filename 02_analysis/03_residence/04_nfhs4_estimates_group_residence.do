@@ -1,7 +1,6 @@
 ******************************************************
 *File to merge 100 samples from nfhs 4 with estimates 
 *For rural and by group
-*Last modified: Feb 23 2020, AG
 ******************************************************
 
 **************************************************
@@ -10,16 +9,7 @@
 	set more off
 	
 	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
 
-	
 	*Log
 	cap log close
 	log using "$dir/02_logs/02analysis_nfhs4_group_rural_ci.txt", text replace

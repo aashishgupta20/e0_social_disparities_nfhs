@@ -1,7 +1,6 @@
 **************************************************
 *Project: Caste and mortality							 *
 *Purpose: graph arriaga contributions by age		 *
-*Last modified: March 4, 2021 by AG					 *
 **************************************************
 
 **************************************************
@@ -14,14 +13,6 @@
 	
 	
 	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
 
 	
 	*Log

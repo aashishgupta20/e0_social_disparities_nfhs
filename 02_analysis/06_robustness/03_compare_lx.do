@@ -1,7 +1,6 @@
 **************************************************
 *Project: Caste and mortality							 *
 *Purpose: bring in life-tables and estimate 0-5 and 15-60 mortality
-*Last modified: April 10, 2021 by AG					 *
 **************************************************
 
 **************************************************
@@ -14,14 +13,6 @@
 	
 	
 	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
 
 	
 	*Log
@@ -181,53 +172,8 @@
 	lab def rf 1 "female, 1997-2000" 2 "male, 1997-2000" /// 
 	3 "female, 2013-2016" 4 "male, 2013-2016"
 	lab val round_female rf
-	
-// 	*srs labels 
-// 	gen label_srs = "e{subscript:0} SRS (1997-2001)" if round_female == 1 & age_group == 0 
-// 	replace label_srs = "e{subscript:0} SRS (1997-2001)" if round_female == 2 & age_group == 0 
-// 	replace label_srs =  "e{subscript:0} SRS (2012-2016)" if round_female == 3 & age_group == 0 
-// 	replace label_srs =  "e{subscript:0} SRS (2012-2016)" if round_female == 4 & age_group == 0 
-//
-// 	gen label_srs2 = "63.3 years" if round_female == 1 & age_group == 0 
-// 	replace label_srs2 = "61.4 years" if round_female == 2 & age_group == 0 
-// 	replace label_srs2 =  "70.2 years" if round_female == 3 & age_group == 0 
-// 	replace label_srs2 =  "67.4 years" if round_female == 4 & age_group == 0 
-//
-// 	cap drop label_mid
-// 	gen label_mid = "=" if age_group == 0
-//	
-// 	*nfhs labels
-// 	gen label_nfhs = "e{subscript:0} NFHS (1997-2000)" if round_female == 1 & age_group == 0 
-// 	replace label_nfhs = "e{subscript:0} NFHS (1997-2000)" if round_female == 2 & age_group == 0 
-// 	replace label_nfhs =  "e{subscript:0} NFHS (2013-2016)" if round_female == 3 & age_group == 0 
-// 	replace label_nfhs =  "e{subscript:0} NFHS (2013-2016)" if round_female == 4 & age_group == 0 
-//
-// 	gen label_nfhs2 = "61.3 years [95% CI 60.7-62.0]" if round_female == 1 & age_group == 0 
-// 	replace label_nfhs2 = "60.6 years [95% CI: 60.0-61.1]" if round_female == 2 & age_group == 0 
-// 	replace label_nfhs2 =  "69.6 years [95% CI: 69.3-69.9]" if round_female == 3 & age_group == 0 
-// 	replace label_nfhs2 =  "66.0 years [95% CI: 65.7-66.3]" if round_female == 4 & age_group == 0 
-//
-// 	gen label_join = "--" if age_group == 0 
-//	
-// 	*srs label position 
-// 	gen srs_lp_x = 28
-// 	gen srs_lp_y = 0.65
-//	
-// 	gen srs_lp2_x = 51
-// 	gen srs_lp2_y = 0.65
-//
-// 	*nfhs label position 
-// 	gen nfhs_lp_x = 28
-// 	gen nfhs_lp_y = 1
-//	
-// 	gen nfhs_lp2_x = 51
-// 	gen nfhs_lp2_y = 1
-//	
-// 	*equal to position
-// 	gen join_lp_x = 49
-// 	gen join_lp_y1 = 1
-// 	gen join_lp_y2 = 0.65
-//	
+
+
 *make a by-graph 
 
 	# d ;

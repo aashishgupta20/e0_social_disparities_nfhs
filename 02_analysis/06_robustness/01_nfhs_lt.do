@@ -1,7 +1,6 @@
 **************************************************
 *Project: Caste and mortality							 *
 *Purpose: bring in life-tables and estimate 0-5 and 15-60 mortality
-*Last modified: April 10, 2021 by AG					 *
 **************************************************
 
 **************************************************
@@ -14,16 +13,7 @@
 	
 	
 	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
 
-	
 	*Log
 	cap log close
 	log using "$dir/02_logs/02analysis_nfhs_compile.txt", text replace

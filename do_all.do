@@ -3,17 +3,26 @@
 *and creates the figures and tables in gupta and sudharsanan 2022
 **********************************************************************************
 
-*last modified: Feb 17, 2022
 	
 	*set directory 
-	local user  "aashish" // "nikkil" // 
+	*set your local directory here
 	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-	}
+	*the file structure we followed for this project was: 
+	/*
+	- Directory
+		 - 00_raw
+		 - 01_do
+			- 01_build
+			- 02_analysis 
+		02_logs 
+		03_intermediate 
+		04_input 
+			- resamples 
+		05_out
+			- figures 
+			- estimates 
+			- tables 
+	*/
 	
 
 *********************************************************************************

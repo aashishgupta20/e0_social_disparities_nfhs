@@ -1,7 +1,6 @@
 **************************************************
 *Project: Caste and mortality							 *
 *Purpose: Make maps by region					 		 *
-*Last modified: 29 July 2020 by AG					 *
 **************************************************
 
 **************************************************
@@ -14,16 +13,7 @@
 	
 	
 	*Set user
-	local user  "aashish" // "nikkil" // 
-	
-		if "`user'"=="nikkil" {
-			global dir "/Users/Nikkil/Dropbox/India Mortality/data_analysis"
-		}
-		if "`user'"=="aashish" {
-			global dir "D:\RDProfiles\aashishg\Dropbox\My PC (PSCStat02)\Desktop\caste"
-		}
 
-	
 	*Log
 	cap log close
 	log using "$dir/02_logs/02analysis_nfhs4_region_maps.txt", text replace
