@@ -1,6 +1,6 @@
 # Replication materials for "Large and persistent life expectancy disparities among India’s social groups"
 
-This repository provides all stata do files necessary for replicating the results presented in [Gupta, A., & Sudharsanan, N. (2020). Large and persistent life expectancy disparities among india’s social groups.](https://osf.io/preprints/socarxiv/hu8t9/). Some code is in R. 
+This repository provides all stata do files necessary for replicating the results presented in [Gupta, A., & Sudharsanan, N. (2020). Large and persistent life expectancy disparities among india’s social groups.](https://osf.io/preprints/socarxiv/hu8t9/) Some code is in R. 
 
 The code is commented throughout. The analysis relies on publicly available DHS data for India, which can be downloaded from https://dhsprogram.com/. Registration is required.
 
