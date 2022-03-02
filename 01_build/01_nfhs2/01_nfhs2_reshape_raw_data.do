@@ -1,5 +1,7 @@
-*Caste and mortality - Reshape raw NFHS 2 HH data
-*Last modified feb 11 2021 by ag
+**************************************************
+*Project: Caste and mortality
+*Purpose: Reshape the raw NFHS 2 data for adults
+**************************************************
 
 *Preamble
 
